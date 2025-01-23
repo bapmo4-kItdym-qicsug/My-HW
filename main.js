@@ -1,19 +1,15 @@
-const glodalVar = "I'm global varible";
-function scope(){
-    const localVar = "I'm local varible";
-    {
-        const blockVar = "I'm block varible";
-        console.log(glodalVar, "global var inside");// работает 
-        console.log(localVar, "local var inside);");// работает 
-        console.log(blockVar, "block var inside"); // работает       // Блочная область видимости доступна только внутри какого-либо блока коды, в котором она определена.
-    // Локальная работает только внутри функции.
+const chooseName = function(name){
+    if(name == "Zhasmin"){
+        console.log("Сегодня твой счастливый день! Получи свой приз ");
+    } else if(name == "Aidana"){
+        console.log("Сегодня твой и счастливый день! Получи свою скидку ");
+    } else{
+        console.log("Добро пожаловать "+ name);
     }
-    console.log(glodalVar, "global var inside");// работает 
-    console.log(localVar, "local var inside);");// работает 
-    console.log(blockVar, "block var inside");// не работает 
 }
 
-scope();
-console.log(glodalVar, "global var outside");// работает 
-console.log(localVar, "local var outside);");//не работает 
-console.log(blockVar, "block var outside");// не работает
+chooseName("Anya");
+chooseName("Aidana");
+chooseName("Vika");
+chooseName("Lida");
+chooseName("Zhasmin");
