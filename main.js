@@ -1,19 +1,14 @@
-const putOn = function (degrees){
-    if (degrees < 0){
-        console.log("Stay inside");
+const verification = function( login, password) { 
+    if ( login === "nika@l" && password === "nnnz") { 
+    console.log("You are logged in"); 
     }
-    else if (degrees < 30){
-        console.log("Wear  coat and a hat");
+    else if ( login ==! "nika@l" && password === "nnnz") { 
+    console.log ("Your login is wrong ");
     }
-    else if (degrees < 50){
-    console.log("Wear a coat");
+    else if ( login === "nika@l" && password ==! "nnnz") { 
+    console.log ("Your password is wrong");
+    }
+    else {
+    console.log("Both inputs are wrong");
+    }
 }
-    else{
-        console.log("Wear whatever you want");
-    }
-}
-
-putOn(49);
-putOn(29);
-putOn(100);
-putOn(-1);
