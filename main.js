@@ -1,12 +1,4 @@
-const findword= function(drow){
-    const word1 = drow;
-    const words = word1.split('');
-    words.reverse();
-    const word2 = words.join('');
-    console.log(word2);
-}
-
-findword("Civic");
-findword("Racecar");
-findword("Testset");
-findword("Madam");
+const parapgraph = "The quick brown fox jump over the lazy dog.It the dog barked,was it really lazy?"
+const searchTerm = "dog";
+let int = parapgraph.indexOf(searchTerm)
+console.log(parapgraph.indexOf(searchTerm,int+1));
