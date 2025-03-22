@@ -1,53 +1,36 @@
-const grade = [
-    {
-        name:"Nika",
-        score: 95
-    },
-    {
-        name:"Liza",
-        score: 59,
-    },
-    {
-        name:"Vika",
-        score: 20,
-    },
-    {
-        name:"Vova",
-        score: 47,
-    },
-    {
-        name:"Nastya",
-        score: 80,
-    },
-    {
-        name:"Dima",
-        score: 33,
-    },
-    {
-        name:"Anya",
-        score: 100,
-    },
-    {
-        name:"Dasha",
-        score: 70,
-    }
- ]
+//1 O(1)
+function add(mun1, num2, num3){
+    return num1 + num2 + num3;
+}
 
- let sortingGrade = function(){
-    for(let i=0; i<grade.length; i++){
-        if (grade[i].score >= 90){
-            console.log(grade[i].name + " you get 90-100 points, you get grade A " );
-        }
-        else if (grade[i].score >= 70){
-            console.log(grade[i].name + " you get 70-89 points, you get grade B "  );
-        }
-        else if (grade[i].score >= 50){
-            console.log(grade[i].name + " you get 50-69 points, you get grade C ");
-        }
-        else{
-            console.log(grade[i].name + " you get 0-49 points, you get grade F ");
+//2 O(n)
+function sayHello(numberOfTimes){
+    for(var i=0; i< numberOfTimes;i++){
+        console.log("Hello");
+    }
+}
+
+//3 O(n^2)
+function logMultiples(n) {
+    for (var numl = 1; numl <= n; num1++){
+    for (var num2 = 1; num2 <= n; num2++) {
+    console.log(num1 * num2);
         }
     }
- }
+}
 
- sortingGrade();
+4//O(n^2)
+function logMultiples2(a,b) {
+    for (var numl = 1; numl <= a; num1++){
+    for (var num2 = 1; num2 <= b; num2++) {
+    console.log("test");
+        }
+    }
+}
+
+//5 O(n)
+function sum(x){
+    for (let i = 0; i < x;i++){
+        console.log("test");
+    }
+}
