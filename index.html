@@ -11,7 +11,27 @@
         <div class="box">2</div>
         <div class="box">3</div>
         <div id="large" class="box">4</div>
-        
+        <script>
+            const boxes = document.querySelectorAll(".box");
+
+for (let i = 0; i < boxes.length; i++) {
+  boxes[i].style.height = "100px";
+  boxes[i].style.fontSize = "30px";
+  boxes[i].style.backgroundColor = "#888";
+  boxes[i].style.borderWidth = "15px";
+  boxes[i].style.borderColor = "rgb(54,52,52)";
+  boxes[i].style.borderStyle = "solid";
+  boxes[i].style.textAlign = "center";
+  boxes[i].style.lineHeight = "100px";
+  boxes[i].style.boxSizing = "border-box";
+  boxes[i].style.width = "200px";
+}
+
+
+const largeBox = document.getElementById("large");
+largeBox.style.width = "660px"; 
+largeBox.style.marginTop = "10px"; 
+        </script>
     <script src="main.js"></script>
 </body>
 </html>
